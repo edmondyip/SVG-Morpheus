@@ -1,3 +1,5 @@
+var SVGMorpheus=(function() {
+  
 'use strict';
 
 function SVGMorpheus(element, options, callback) {
@@ -447,12 +449,8 @@ SVGMorpheus.prototype.registerEasing=function(name, fn) {
   easings[name] = fn;
 }
 
-if (typeof define === 'function' && define.amd) {
-  define(function () {
-    return SVGMorpheus
-  })
-} else if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-  module.exports = SVGMorpheus
-} else {
-  window.SVGMorpheus = SVGMorpheus
-}
+return SVGMorpheus;
+
+}());
+
+export default SVGMorpheus;
