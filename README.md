@@ -1,8 +1,16 @@
 # SVG Morpheus
 
-## WARNING
+## Import SVG-Morpheus
 
-THIS PROJECT IS NOT MAINTAINED ANYMORE. You are free to fork it and start a new project.
+Added support for Javascript framework
+You can simply use import to get this library now
+
+```javascript
+import SVGMorpheus from "svg-morpheus"
+
+myIcon = new SVGMorpheus('#svg')
+myIcon.to('icon2')
+```
 
 ## Overview
 
